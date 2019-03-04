@@ -1,0 +1,76 @@
+/* li {
+  width: 200px;
+  border: 1px solid blue;
+  padding: 3px;
+  margin-bottom: 5px;
+  list-style-type: none;
+} */
+
+/* li:hover {
+  background: green;
+  border-color: transparent; 
+}
+
+li:hover + li {
+  background: red;
+  border-color: transparent; 
+} */
+
+/*
+==================================================================
+*/
+
+/* li:hover {
+  background: green;
+}
+
+li:hover + li + li {
+  background: red;
+  border-color: transparent; 
+} */
+
+/*
+==================================================================
+*/
+
+/* li:hover ~ li {
+  background: red;
+  border-color: transparent; 
+}
+
+li:hover {
+  background: green;
+  border-color: transparent; 
+} */
+
+/*
+==================================================================
+*/
+
+/* li:hover {
+  background: green;
+  border-color: transparent; 
+}
+
+li:hover ~ li {
+  background: red;
+  border-color: transparent; 
+}
+
+li:hover ~ li:last-child {
+  background: transparent;
+  border: 1px solid blue;
+} */
+
+/*
+==================================================================
+*/
+
+/* li:hover {
+  background: green;
+}
+
+li:hover ~ li:nth-child(2n+1) {
+  background: red;
+  border-color: transparent; 
+} */

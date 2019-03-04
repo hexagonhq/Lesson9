@@ -1,0 +1,89 @@
+/*
+Context selector
+==============================================
+*/
+p {
+   /* color: brown; */
+}
+
+div p {
+    /* color: brown; */
+}
+
+div h2 {
+   /* color: brown; */
+}
+
+/*
+Grouping selectors
+==============================================
+*/
+p,
+h2 {
+   /* color: brown; */
+}
+
+p, div h2 {
+   /* color: brown; */
+}
+
+div h2, p {
+   /* color: brown; */
+}
+
+/*
+Child selector
+==============================================
+*/
+p > i {
+   /* color: brown; */
+}
+
+ul > li {
+   /* color: brown; */
+}
+
+p > a,
+.test {
+   /* color: brown; */
+}
+
+/*
+Neighbor selector
+==============================================
+*/
+b + i {
+  /* color: brown; */
+}
+
+#test b + i {
+   /* color: brown; */
+}
+
+/*
+Related selector
+==============================================
+*/
+ul ~ p {
+  /* color: brown; */
+}
+
+h1 ~ p {
+   /* color: brown; */
+}
+
+#test h2 ~ p {
+   /* color: brown; */
+}
+
+/*
+Child selector
+===================
+*/
+* {
+   /* color: brown; */
+}
+
+p > * i {
+   /* color: brown; */
+}
