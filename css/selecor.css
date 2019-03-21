@@ -2,16 +2,17 @@
 Context selector
 ==============================================
 */
-p {
-   /* color: brown; */
+
+p { /* lesson 1 */
+
 }
 
-div p {
-    /* color: brown; */
+div p { /* lesson 2 */
+
 }
 
-div h2 {
-   /* color: brown; */
+div h2 { /* lesson 3 */
+
 }
 
 /*
@@ -19,71 +20,159 @@ Grouping selectors
 ==============================================
 */
 p,
-h2 {
-   /* color: brown; */
+h2 { /* lesson 4 */
+
 }
 
-p, div h2 {
-   /* color: brown; */
+div h2, p { /* lesson 5 */
+
 }
 
-div h2, p {
-   /* color: brown; */
+div h2, div p { /* lesson 6 */
+
+}
+
+/*
+id
+==============================================
+*/
+#test{ /* lesson 7 */
+
+}
+#test p { /* lesson 8 */
+
+}
+#test p, #test h2 { /* lesson 9 */
+
+}
+
+/*
+class
+==============================================
+*/
+.test { /* lesson 10 */
+
+}
+p.test { /* lesson 11 */
+
+}
+.test, .hello { /* lesson 12 */
+
+}
+p.test, h2.hello { /* lesson 13 */
+
+}
+p.test, .hello { /* lesson 14 */
+
+}
+
+/*
+id and class
+==============================================
+*/
+.test.hello { /* lesson 16 */
+
+}
+p.test.hello { /* lesson 17 */
+
+}
+h2.test.hello.eee { /* lesson 18 */
+
+}
+
+/*
+On multiclass
+==============================================
+*/
+.test.hello { /* lesson 19 */
+
+}
+p.test.hello { /* lesson 20 */
+
+}
+h2.test.hello.eee { /* lesson 21 */
+
 }
 
 /*
 Child selector
 ==============================================
 */
-p > i {
-   /* color: brown; */
+p > i { /* lesson 22 */
+
 }
 
-ul > li {
-   /* color: brown; */
+ul > li { /* lesson 23 */
+
 }
 
 p > a,
-.test {
-   /* color: brown; */
+.test { /* lesson 24 */
+
 }
 
 /*
 Neighbor selector
 ==============================================
 */
-b + i {
-  /* color: brown; */
+b + i { /* lesson 25 */
+
 }
 
-#test b + i {
-   /* color: brown; */
+#test b + i { /* lesson 26 */
+
+}
+
+ul + p { /* lesson 27 */
+
 }
 
 /*
 Related selector
 ==============================================
 */
-ul ~ p {
-  /* color: brown; */
+h1 ~ p { /* lesson 28 */
+
 }
 
-h1 ~ p {
-   /* color: brown; */
-}
+#test h2 ~ p { /* lesson 29 */
 
-#test h2 ~ p {
-   /* color: brown; */
 }
 
 /*
-Child selector
+Universal selector
 ===================
 */
-* {
-   /* color: brown; */
+* { /* lesson 30 */
+
 }
 
-p > * i {
-   /* color: brown; */
+p > * i { /* lesson 31 */
+
+}
+
+/*
+selector attr
+==============================================
+*/
+[title] { /* lesson 32 */
+
+}
+p[title] { /* lesson 33 */
+
+}
+p[title="привет"] { /* lesson 34 */
+
+}
+a[href^="http://"] { /* lesson 35 */
+
+}
+a[href$=".html"] { /* lesson 36 */
+
+}
+p[title~="привет"] { /* lesson 37 */
+
+}
+p[class|="top"] { /* lesson 38 */
+
 }
